@@ -6,7 +6,6 @@ DIR2="/mnt/temporal"
 salidaDIR1=`find $DIR1`
 salidaDIR2=`find $DIR2`
 
-
 for i in $salidaDIR1; do
 	if [ -f $i ]; then
 		lastpart=`echo ${i#$DIR1}`
