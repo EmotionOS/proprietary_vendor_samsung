@@ -10,10 +10,6 @@ DIR2="/media/null/9e7d6fb6-c8f8-4241-b20a-09e2bbcb296d/511Blobsv1.0/system"
 salidaDIR1=`find $DIR1`
 salidaDIR2=`find $DIR2`
 
-<<<<<<< HEAD
-||||||| merged common ancestors
-
-=======
 DONTCHECK="vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -35,7 +31,6 @@ vendor/lib/egl/eglsubAndroid.so
 vendor/lib/libc2d30.so
 vendor/lib/libqcci_legacy.so"
 
->>>>>>> e8239bd7d60324dc301030235f30a410ffd04da6
 for i in $salidaDIR1; do
 	if [ -f $i ]; then
 		lastpart=`echo ${i#$DIR1}`
