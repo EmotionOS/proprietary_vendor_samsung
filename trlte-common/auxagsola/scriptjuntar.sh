@@ -50,6 +50,12 @@ echo
 echo
 echo
 
+rm soloDir1.txt
 for i in $solodir1; do
 	echo $i >> soloDir1.txt
+done
+
+rm soloDir2.txt
+for i in $solodir2; do
+	echo $i >> soloDir2.txt
 done
