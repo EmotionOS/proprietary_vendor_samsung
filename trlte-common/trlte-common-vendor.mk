@@ -21,4 +21,3 @@ PRODUCT_PACKAGES += \
     TimeService
 
 $(call inherit-product, vendor/samsung/trlte-common/trlte-common-vendor-blobs.mk)
-
