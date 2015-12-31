@@ -18,7 +18,7 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),trltexx)
 
-include $(CLEAR_VARS)
+#include $(CLEAR_VARS)
 #LOCAL_MODULE := com.qualcomm.location
 #LOCAL_MODULE_OWNER := samsung
 #LOCAL_SRC_FILES := proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk
@@ -27,7 +27,7 @@ include $(CLEAR_VARS)
 #LOCAL_MODULE_CLASS := APPS
 #LOCAL_CERTIFICATE := platform
 #LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
+#include $(BUILD_PREBUILT)
 
 endif
 
