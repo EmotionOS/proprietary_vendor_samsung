@@ -1,15 +1,15 @@
 #!/bin/bash
 
-PROPRIETARYFILES=`cat /root/android/system/device/samsung/trlte-common/proprietary-files.txt`
+PROPRIETARYFILES=`grep -v "#" /root/android/system/device/samsung/trlte-common/proprietary-files.txt | cut -d ":" -f1`
 DIR1="`pwd`/proprietary/"
-DIR2="/mnt/temporal"
+DIR2="/mnt/temporal/"
 
 #DIR2="/media/null/9e7d6fb6-c8f8-4241-b20a-09e2bbcb296d/511Blobsv1.0/system"
 #DIR1="/media/null/9e7d6fb6-c8f8-4241-b20a-09e2bbcb296d/511Blobsv1.0/system/"
 #DIR2="`pwd`/proprietary"
 
-salidaDIR1=`find $DIR1`
-salidaDIR2=`find $DIR2`
+#salidaDIR1=`find $DIR1`
+#salidaDIR2=`find $DIR2`
 
 DONTCHECK="vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
@@ -34,7 +34,38 @@ vendor/lib/libqcci_legacy.so"
 
 
 for i in $PROPRIETARYFILES; do
-	echo "vale: $i"    
+	if [ ! -f $DIR2/$i ]; then
+		#echo encontrado en DIR2
+	#else
+		echo "vale: $i"
+		echo No encontrado en DIR2
+	fi
+	#echo
+
+	
+	if [ -f $i ]; then
+		lastpart=`echo ${i#$DIR1}`
+		#echo lastpart vale $lastpart
+		salida=`echo $DONTCHECK | grep "$lastpart"`
+		if [ $? -eq 1 ]; then # PARA COMPROBAR QUE NO ESTÁ EN LA LISTA, SI SALE 1 ES QUE NO HAY COINCIDENCIA
+			if [ -f $i ]; then
+				if [ -f $DIR2/$lastpart ]; then
+					file1=$(md5sum $i | awk '{print $1}')
+					file2=$(md5sum $DIR2/$lastpart | awk '{print $1}')
+					if [ ! $file1 = $file2 ]; then
+						echo "Fichero $i es distinto (a $DIR2/$lastpart)."
+						# Si quiero copiar de 2 a 1
+						#cp $DIR2/$lastpart $DIR1$lastpart
+						# Si quiero copiar de 1 a 1
+						#cp $DIR1$lastpart $DIR2/$lastpart
+					fi
+				else
+					echo "No existe $DIR2/$lastpart"
+				fi
+			fi
+		fi
+	fi
+
 done
 
 echo "FIN"
