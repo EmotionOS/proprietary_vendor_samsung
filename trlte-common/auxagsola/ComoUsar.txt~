@@ -1,0 +1,2 @@
+checkIfDifferent.sh --> comprueba si lo que hay en un directorio es lo mismo que hay en el otro. Sirve para cuando ya tienes los ficheros, comprobar si hay alguno nuevo. Evita los que hay en DONTCHECK, que son los nuevos según gekke que han cogido del nexus 6.
+

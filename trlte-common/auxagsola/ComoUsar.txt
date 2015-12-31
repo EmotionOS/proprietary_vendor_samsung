@@ -1,0 +1,18 @@
+- checkIfDifferent.sh --> comprueba si lo que hay en un directorio es lo mismo que hay en el otro. Sirve para cuando ya tienes los ficheros, comprobar si hay alguno nuevo. Evita los que hay en DONTCHECK, que son los nuevos según gekke que han cogido del nexus 6.
+- copyFromProprietary.sh --> comprueba lo que hay en proprietary_files (el que esté en el comentario, comprobar cuál es y cambiarlo según me interese).
+Ahora mismo no copia todo, pero se puede poner para que de igual que sean distintos o no, que lo que esté en proprietary files se copie directamente al destino.
+
+Ambos hay que ejecutarlos en el directorio padre, por ej.
+root@null:/media/null/9e7d6fb6-c8f8-4241-b20a-09e2bbcb296d/sourcegit/proprietary_vendor_samsung/trltexx# ../trlte-common/auxagsola/copyFromProprietary.sh
+Y hay que ejecutarlo para el -common, y el xx.
+
+Además, si se cambia el proprietary_files hay que ejecutar setup-makefiles.sh, tanto en
+/root/android/system/device/samsung/trlte-common
+como en
+/root/android/system/device/samsung/trltexx
+previamente hay que hacer un 
+DEVICE=trltexx (o trlte-common)
+VENDOR=samsung
+export DEVICE
+export VENDOR
+
