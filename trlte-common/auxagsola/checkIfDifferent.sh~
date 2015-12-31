@@ -44,7 +44,7 @@ for i in $salidaDIR1; do
 					if [ ! $file1 = $file2 ]; then
 						echo "Fichero $i es distinto (a $DIR2/$lastpart)."
 						# Si quiero copiar de 2 a 1
-						#cp $DIR2/$lastpart $DIR1$lastpart
+						cp $DIR2/$lastpart $DIR1$lastpart
 						# Si quiero copiar de 1 a 1
 						#cp $DIR1$lastpart $DIR2/$lastpart
 					fi
