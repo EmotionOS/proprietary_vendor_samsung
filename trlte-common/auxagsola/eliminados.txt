@@ -1,0 +1,10 @@
+No existe /mnt/temporal/lib/libdetectmodem.so
+SI No existe /mnt/temporal/lib/libwvm.so (ESTÁ EN OTRO LADO)
+SI No existe /mnt/temporal/lib/hw/camera.vendor.apq8084.so (ESTÁ CON EL MISMO NOMBRE SIN .VENDOR)
+NO -- No existe /mnt/temporal/lib/hw/consumerir.apq8084.so
+SI No existe /mnt/temporal/lib/libtime_genoff.so ESTA EN OTRO LADO
+NO -- No existe /mnt/temporal/vendor/lib/libWVphoneAPI.so ESTABA EN OTRA RUTA, COPIADO A MANO
+NO -- No existe /mnt/temporal/vendor/lib/libsc-a3xx.so
+si - No existe /mnt/temporal/vendor/firmware/bcm4358A1_V0051.0083_wisol.hcd cambiados por los nuevos (0054)
+si - No existe /mnt/temporal/vendor/firmware/bcm4358A1_V0051.0083.hcd como arriba
+

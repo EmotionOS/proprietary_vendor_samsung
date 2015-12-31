@@ -1,8 +1,8 @@
 #!/bin/bash
 
 DIR1="`pwd`/proprietary/"
-#DIR2="/mnt/temporal"
-DIR2="/media/null/9e7d6fb6-c8f8-4241-b20a-09e2bbcb296d/511Blobsv1.0/system"
+DIR2="/mnt/temporal"
+#DIR2="/media/null/9e7d6fb6-c8f8-4241-b20a-09e2bbcb296d/511Blobsv1.0/system"
 
 #DIR1="/media/null/9e7d6fb6-c8f8-4241-b20a-09e2bbcb296d/511Blobsv1.0/system/"
 #DIR2="`pwd`/proprietary"
@@ -48,8 +48,8 @@ for i in $salidaDIR1; do
 						# Si quiero copiar de 1 a 1
 						#cp $DIR1$lastpart $DIR2/$lastpart
 					fi
-				#else
-				#	echo "No existe $DIR2/$lastpart"
+				else
+					echo "No existe $DIR2/$lastpart"
 				fi
 			fi
 		fi
