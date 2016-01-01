@@ -1,8 +1,9 @@
 #!/bin/bash
 
 PROPRIETARYFILES=`grep -v "#" /root/android/system/device/samsung/trlte-common/proprietary-files.txt | cut -d ":" -f1`
-DIR1="`pwd`/proprietary/"
-DIR2="/mnt/temporal/"
+#PROPRIETARYFILES=`grep -v "#" /root/android/system/device/samsung/trltexx/proprietary-files.txt | cut -d ":" -f1`
+DIR1="`pwd`/proprietary"
+DIR2="/mnt/temporal"
 
 #DIR2="/media/null/9e7d6fb6-c8f8-4241-b20a-09e2bbcb296d/511Blobsv1.0/system"
 #DIR1="/media/null/9e7d6fb6-c8f8-4241-b20a-09e2bbcb296d/511Blobsv1.0/system/"
@@ -32,7 +33,7 @@ vendor/lib/egl/eglsubAndroid.so
 vendor/lib/libc2d30.so
 vendor/lib/libqcci_legacy.so"
 
-
+echo "* Primero buscamos a ver si hay algún fichero que falte."
 for i in $PROPRIETARYFILES; do
 	if [ ! -f $DIR2/$i ]; then
 		#echo encontrado en DIR2
@@ -41,8 +42,53 @@ for i in $PROPRIETARYFILES; do
 		echo No encontrado en DIR2
 	fi
 	#echo
+done
+echo "* fin de búsqueda de fallos."
+echo
+echo
 
-	
+
+
+echo "* Ahora buscamos los que estén en proprietary pero no estén en el destino, no debería haber ninguno"
+for i in $PROPRIETARYFILES; do
+	if [ ! -f $DIR1/$i ]; then
+		echo "No encontrado en DIR1: $DIR1/$i"
+	fi
+done
+
+echo
+echo
+echo
+echo "* Ahora buscamos los que estén en proprietary pero no estén en el source (DIR2, /mnt/temporal, de donde coger las cosas)"
+for i in $PROPRIETARYFILES; do
+	if [ ! -f $DIR2/$i ]; then
+		echo "No encontrado en DIR2: $DIR2/$i"
+	fi
+done
+
+
+
+echo
+echo
+echo "* Por último comprobamos si lo que hay en DIR1 (destino) es distinto de DIR2 (origen), y dependiendo de lo que sea lo copiamos o no (si he comentado el cp) -- NOTA: TARDA UN RATO POR LOS MD5"
+for i in $PROPRIETARYFILES; do
+	if [ -f $DIR2/$i ]; then
+		if [ -f $DIR1/$i ]; then
+			salida=`echo $DONTCHECK | grep "$i"`
+			if [ $? -eq 1 ]; then # PARA COMPROBAR QUE NO ESTÁ EN LA LISTA, SI SALE 1 ES QUE NO HAY COINCIDENCIA
+				file1=$(md5sum $DIR1/$i | awk '{print $1}')
+				file2=$(md5sum $DIR2/$i | awk '{print $1}')
+				if [ ! $file1 = $file2 ]; then
+					echo "Fichero $DIR1/$i es distinto (a $DIR2/$i)."
+					# Si quiero copiar de 2 a 1
+					#cp $DIR2/$i $DIR1/$i
+				fi
+				#echo "No encontrado en DIR1: $DIR2/$i"
+			fi
+		fi
+	fi
+done
+
 	if [ -f $i ]; then
 		lastpart=`echo ${i#$DIR1}`
 		#echo lastpart vale $lastpart
@@ -65,8 +111,6 @@ for i in $PROPRIETARYFILES; do
 			fi
 		fi
 	fi
-
-done
 
 echo "FIN"
 
