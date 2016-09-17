@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trlteusc/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/samsung/trlteusc/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/samsung/trlteusc/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+    vendor/samsung/trlteusc/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/samsung/trlteusc/proprietary/bin/efsks:system/bin/efsks \
     vendor/samsung/trlteusc/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
     vendor/samsung/trlteusc/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \

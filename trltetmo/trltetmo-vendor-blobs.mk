@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltetmo/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/samsung/trltetmo/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/samsung/trltetmo/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/samsung/trltetmo/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/samsung/trltetmo/proprietary/bin/efsks:system/bin/efsks \
     vendor/samsung/trltetmo/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     vendor/samsung/trltetmo/proprietary/bin/ks:system/bin/ks \
