@@ -52,7 +52,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltexx/proprietary/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy \
     vendor/samsung/trltexx/proprietary/bin/qcks:system/bin/qcks \
     vendor/samsung/trltexx/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/samsung/trltexx/proprietary/bin/rmnetcli:system/bin/rmnetcli \
     vendor/samsung/trltexx/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/trltexx/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/trltexx/proprietary/bin/netmgrd:system/bin/netmgrd \
@@ -66,5 +65,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltexx/proprietary/vendor/lib/libqmimotext.so:system/vendor/lib/libqmimotext.so \
     vendor/samsung/trltexx/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/trltexx/proprietary/vendor/lib/libmotext_inf.so:system/vendor/lib/libmotext_inf.so \
-    vendor/samsung/trltexx/proprietary/vendor/lib/librmnetctl.so:system/vendor/lib/librmnetctl.so \
     vendor/samsung/trltexx/proprietary/vendor/lib/libsysutils_local.so:system/vendor/lib/libsysutils_local.so
+    
