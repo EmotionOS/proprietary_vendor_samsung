@@ -64,7 +64,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltespr/proprietary/lib/libcfiril.so:system/lib/libcfiril.so \
     vendor/samsung/trltespr/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/trltespr/proprietary/lib/librilswitch.so:system/lib/librilswitch.so \
-    vendor/samsung/trltespr/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
