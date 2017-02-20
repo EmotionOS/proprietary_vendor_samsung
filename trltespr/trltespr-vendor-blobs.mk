@@ -78,5 +78,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltespr/proprietary/vendor/lib/libqmimotext.so:system/vendor/lib/libqmimotext.so \
     vendor/samsung/trltespr/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libmotext_inf.so:system/vendor/lib/libmotext_inf.so \
-    vendor/samsung/trltespr/proprietary/vendor/lib/libsysutils_local.so:system/vendor/lib/libsysutils_local.so
+    vendor/samsung/trltespr/proprietary/vendor/lib/libsysutils_local.so:system/vendor/lib/libsysutils_local.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so
