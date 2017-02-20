@@ -61,7 +61,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltespr/proprietary/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy \
     vendor/samsung/trltespr/proprietary/bin/qcks:system/bin/qcks \
     vendor/samsung/trltespr/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/samsung/trltespr/proprietary/bin/rmnetcli:system/bin/rmnetcli \
     vendor/samsung/trltespr/proprietary/lib/libcfiril.so:system/lib/libcfiril.so \
     vendor/samsung/trltespr/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/trltespr/proprietary/lib/librilswitch.so:system/lib/librilswitch.so \
@@ -79,6 +78,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltespr/proprietary/vendor/lib/libqmimotext.so:system/vendor/lib/libqmimotext.so \
     vendor/samsung/trltespr/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libmotext_inf.so:system/vendor/lib/libmotext_inf.so \
-    vendor/samsung/trltespr/proprietary/vendor/lib/librmnetctl.so:system/vendor/lib/librmnetctl.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libsysutils_local.so:system/vendor/lib/libsysutils_local.so
     vendor/samsung/trltespr/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so
