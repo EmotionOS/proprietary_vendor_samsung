@@ -65,5 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltexx/proprietary/vendor/lib/libqmimotext.so:system/vendor/lib/libqmimotext.so \
     vendor/samsung/trltexx/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/trltexx/proprietary/vendor/lib/libmotext_inf.so:system/vendor/lib/libmotext_inf.so \
-    vendor/samsung/trltexx/proprietary/vendor/lib/libsysutils_local.so:system/vendor/lib/libsysutils_local.so
+    vendor/samsung/trltexx/proprietary/vendor/lib/libsysutils_local.so:system/vendor/lib/libsysutils_local.so \
+    vendor/samsung/trltexx/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so
     
