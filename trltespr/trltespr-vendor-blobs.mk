@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltespr/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
+    vendor/samsung/trltespr/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
@@ -61,21 +62,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltespr/proprietary/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy \
     vendor/samsung/trltespr/proprietary/bin/qcks:system/bin/qcks \
     vendor/samsung/trltespr/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/samsung/trltespr/proprietary/bin/rild:system/bin/rild \
+    vendor/samsung/trltespr/proprietary/bin/rmnetcli:system/bin/rmnetcli \
     vendor/samsung/trltespr/proprietary/lib/libcfiril.so:system/lib/libcfiril.so \
+    vendor/samsung/trltespr/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    vendor/samsung/trltespr/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/trltespr/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
+    vendor/samsung/trltespr/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/trltespr/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    vendor/samsung/trltespr/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/trltespr/proprietary/lib/librilswitch.so:system/lib/librilswitch.so \
+    vendor/samsung/trltespr/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
-    vendor/samsung/trltespr/proprietary/bin/netmgrd:system/bin/netmgrd \
-    vendor/samsung/trltespr/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
-    vendor/samsung/trltespr/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
-    vendor/samsung/trltespr/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
-    vendor/samsung/trltespr/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
-    vendor/samsung/trltespr/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
-    vendor/samsung/trltespr/proprietary/vendor/lib/libmdmcutback.so:system/vendor/lib/libmdmcutback.so \
-    vendor/samsung/trltespr/proprietary/vendor/lib/libqmimotext.so:system/vendor/lib/libqmimotext.so \
-    vendor/samsung/trltespr/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
-    vendor/samsung/trltespr/proprietary/vendor/lib/libmotext_inf.so:system/vendor/lib/libmotext_inf.so \
-    vendor/samsung/trltespr/proprietary/vendor/lib/libsysutils_local.so:system/vendor/lib/libsysutils_local.so \
     vendor/samsung/trltespr/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so
