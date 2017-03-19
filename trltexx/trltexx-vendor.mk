@@ -16,13 +16,13 @@
 
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
-    CNEService \
     ConnectivityExt \
-    tcmclient \
-    atfwd \
-    ims \
-    rcsimssettings \
-    rcsservice
+    tcmclient
+#     atfwd \
+#    CNEService \
+#    ims \
+#    rcsimssettings \
+#    rcsservice
 
 $(call inherit-product, vendor/samsung/trltexx/trltexx-vendor-blobs.mk)
 
